@@ -25,11 +25,9 @@ Endereco *e;
 
 int main(){
 
-	char n1[40];
 	char l[300]; //onde "l" é o ponteiro para a linha (registro)
-	sprintf(n1,"cep.dat");
-
-	FILE *f1 = fopen(n1,"r");
+	
+	FILE *f1 = fopen("cep.dat","r");
 	FILE *f2 = fopen("peguei80.dat","w");
 	int linha = 0;
 
